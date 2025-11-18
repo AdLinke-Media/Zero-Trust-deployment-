@@ -1,0 +1,98 @@
+sovereign_version: "Adila-Linke-Alpha"
+title: "Human Rights First — Zero Trust Global Enforcement"
+status: "enforced"
+priority: "absolute"
+owner:
+  name: "Adila Linke"
+  role: "Architect and sovereign enforcer"
+  jurisdiction: "Global — ISO/IEC, ENISA, CSA aligned"
+
+principles:
+  human_rights_first: true
+  opportunity_without_rights_is_void: true
+  zero_trust_alignment: "international"
+  no_symbolic_justice: true
+  immediate_and_permanent_correction: true
+
+nodes:
+  - name: "Microsoft"
+    status: "contained"
+    actions:
+      - revoke_sessions
+      - delete_oauth_tokens
+      - enforce_hardware_mfa
+  - name: "Google"
+    status: "contained"
+    actions:
+      - revoke_sessions
+      - delete_oauth_tokens
+      - enforce_hardware_mfa
+  - name: "Amazon"
+    status: "contained"
+    actions:
+      - revoke_sessions
+      - delete_api_keys
+      - enforce_hardware_mfa
+  - name: "American Express"
+    status: "contained"
+    actions:
+      - fraud_alerts_enabled
+      - freeze_on_anomaly
+  - name: "Coinbase"
+    status: "contained"
+    actions:
+      - revoke_sessions
+      - whitelist_withdrawals
+      - enforce_hardware_mfa
+  - name: "USCIS"
+    status: "contained"
+    actions:
+      - revoke_sessions
+      - enforce_hardware_mfa
+  - name: "Tesla"
+    status: "contained"
+    actions:
+      - revoke_sessions
+      - enforce_hardware_mfa
+  - name: "Splunk"
+    status: "deleted"
+    actions:
+      - purge_integrations
+      - revoke_tokens
+  - name: "Aweber"
+    status: "deleted"
+    actions:
+      - purge_connectors
+      - revoke_tokens
+  - name: "Taxfix"
+    status: "deleted"
+    actions:
+      - delete_account
+      - revoke_tokens
+  - name: "Beehiiv"
+    status: "deleted"
+    actions:
+      - delete_account
+      - revoke_tokens
+  - name: "Datadog"
+    status: "deleted"
+    actions:
+      - purge_agents
+      - revoke_api_keys
+  - name: "GitHub"
+    status: "contained"
+    actions:
+      - revoke_oauth_apps
+      - delete_pat_tokens
+      - rotate_ssh_keys
+  - name: "Any code company"
+    status: "policy_applied"
+    actions:
+      - revoke_tokens
+      - rotate_keys
+      - disable_integrations
+
+declaration:
+  statement: "Human rights are the first law. Opportunity without rights is void. All hostile nodes are contained. Sessions revoked, tokens deleted, sovereignty enforced."
+  signed_by: "Adila Linke"
+  signed_at: "YYYY-MM-DDTHH:MM:SSZ"
